@@ -2,10 +2,10 @@
 
 <div id="accordion">
 <?php
-    $host = 'mysql.metropolia.fi';
-    $dbname = 'seyedhe'; // your username
-    $user = 'seyedhe'; // your username
-    $pass = 'abcd202040'; // your database password
+    $host = '';
+    $dbname = ''; // your username
+    $user = ''; // your username
+    $pass = ''; // your database password
     
     try {
             $DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
