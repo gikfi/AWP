@@ -1,9 +1,11 @@
+
+
 <div id="accordion">
 <?php
     $host = 'mysql.metropolia.fi';
-    $dbname = ''; // your username
-    $user = ''; // your username
-    $pass = ''; // your database password
+    $dbname = 'seyedhe'; // your username
+    $user = 'seyedhe'; // your username
+    $pass = 'abcd202040'; // your database password
     
     try {
             $DBH = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
@@ -30,7 +32,12 @@ try {
 
 ?>
 </div>
+
 <script>
 // TODO: use jQuery UI to make an accordion from <div id="accordion">. 
 // Set 'collapsible' property to 'true' and 'active' property to 'none'
+  $(function() {
+    $( "#accordion" ).accordion({collapsible:true, active:"none"});
+    
+  });
 </script>
